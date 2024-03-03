@@ -19,14 +19,21 @@
       </select>
     </div>
     <div class="quote-container">
-      <b><p class="quote" id="quote-text"></p></b>
-      <i><p class="author" id="quote-author"></p></i>
-      <b><p class="category" id="quote-category"></p></b>
+      <p class="quote" id="quote-text"></p>
+      <p class="author" id="quote-author"></p>
+      <p class="category" id="quote-category"></p>
       
     </div>
     <button onclick="getRandomQuote()">Generate Quote</button>
   </div>
-
+  <footer style="background:black;" align="center">
+      <font color="white"> <b>© 2024</b> | <a href="https://telegram.me/KoshikKumar"><b><i><u>Koshik Kumar</u></i></b></a> <br/></font>
+      <font style="font-size:9px;" color="white"><i><b>Last Modified: <span id="lastModified"></span> IST </b></i>
+  </footer>
   <script src="script.js"></script>
+  <script>
+    var text = document.lastModified;
+      document.getElementById("lastModified").innerHTML = text;
+  </script>
 </body>
 </html>
