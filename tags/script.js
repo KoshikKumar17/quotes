@@ -6,6 +6,7 @@ function getRandomQuote() {
     .then(data => {
       document.getElementById('quote-text').textContent = data.content;
       document.getElementById('quote-author').textContent = '- ' + data.author;
+      document.getElementById('quote-category').textContent = 'Category: ' + data.tags.join(', ');
     })
     .catch(error => console.error('Error fetching quote:', error));
 }
