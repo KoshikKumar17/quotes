@@ -33,13 +33,13 @@
 }
         </style>
     </head>
-    <body align="center"; style="font-family: 'Poppins', sans-serif; font-weight: bold;">
+    <body align="center"; style="font-family: 'Poppins', sans-serif; font-weight: bold; background: aliceblue;">
         <div class="container mx-auto p-8">
             <h1 class="text-4xl mb-8">Random Quote Generator</h1>
             <div class="mb-4">
                 <label for="category-select" class="mr-4">Select a Category:</label>
                 <select id="category-select" class="px-4 py-2 border rounded">
-                    <option value="inspirational">Inspirational</option>
+                    <option value="wisdom">Wisdom</option>
                     <option value="life">Life</option>
                     <option value="motivational">Motivational</option>
                     <!-- Add more options as needed -->
@@ -50,7 +50,7 @@
                 <p class="quote hidden" id="quote-text"></p>
                 <p class="author hidden" id="quote-author"></p>
             </div>
-            <button onclick="getRandomQuote()" class="px-4 py-2 bg-blue-500 text-white rounded">Generate Quote</button>
+            <button onclick="getRandomQuote()" class="inline-flex items-center justify-center h-10 gap-2 px-5 text-sm font-medium tracking-wide text-white transition duration-300 rounded shadow-md focus-visible:outline-none whitespace-nowrap bg-emerald-500 shadow-emerald-200 hover:bg-emerald-600 hover:shadow-sm hover:shadow-emerald-200 focus:bg-emerald-700 focus:shadow-sm focus:shadow-emerald-200 disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none border border-black">Generate Quote</button>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script src="script.js"></script>
