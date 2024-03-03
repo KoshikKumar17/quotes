@@ -16,7 +16,7 @@ function getRandomQuote() {
       // Animate new quote
       new Typed('#quote-text', {
         strings: [data.content],
-        typeSpeed: 150,
+        typeSpeed: 10,
         showCursor: true,
       });
 
