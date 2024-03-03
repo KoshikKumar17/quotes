@@ -5,7 +5,7 @@ function getRandomQuote() {
     .then(response => response.json())
     .then(data => {
       document.getElementById('quote-text').textContent = data.content;
-      document.getElementById('quote-category').textContent = data.tags;
+      document.getElementById('quote-category').textContent = 'Category: ' + data.tags.join(', ');
       document.getElementById('quote-author').textContent = '- ' + data.author;
     })
     .catch(error => console.error('Error fetching quote:', error));
