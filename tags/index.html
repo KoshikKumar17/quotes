@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Random Quote Generator</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://github.com/KoshikKumar17/ytthumbdl/blob/main/style.css">
 </head>
 <body>
-  <div class="container">
-    <h3>Random Quote Generator of Specific Category</h3>
+  <div class="container wrapper">
+      <font style="font-size:20px;" color="black"><a href="https://KoshikKumar17.github.io"><b><u>Koshik Kumar</u></b></a></font><br/><br/>
+      <h3>Quote Generator </h3>
+        <p> Choose category and click on Generate button. It will generate a quote of that category.</p>
     <div class="category-selector">
       <label for="category-select">Select a Category:</label>
       <select id="category-select">
@@ -17,13 +19,15 @@
         <option value="motivational">Motivational</option>
         <!-- Add more options as needed -->
       </select>
+    </div>
     <div class="quote-container">
       <p class="quote" id="quote-text"></p>
       <p class="author" id="quote-author"></p>
       <p class="category" id="quote-category"></p>
+      <div class="output">
+      </div>
     </div>
-    </div>
-    <button onclick="getRandomQuote()">Generate Quote</button>
+    <button onclick="getRandomQuote()" class="inline-flex items-center justify-center h-10 gap-2 px-5 text-sm font-medium tracking-wide text-white transition duration-300 rounded shadow-md focus-visible:outline-none whitespace-nowrap bg-emerald-500 shadow-emerald-200 hover:bg-emerald-600 hover:shadow-sm hover:shadow-emerald-200 focus:bg-emerald-700 focus:shadow-sm focus:shadow-emerald-200 disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">Generate Quote</button>
   
   <footer style="background:black;" align="center">
       <font color="white"> <b>© 2024</b> | <a href="https://telegram.me/KoshikKumar"><b><i><u>Koshik Kumar</u></i></b></a> <br/></font>
@@ -31,9 +35,12 @@
   </footer>
   </div>
   <script src="script.js"></script>
+      <!-- Tailwind CSS  -->
+    <script src="https://cdn.tailwindcss.com"></script>
   <script>
     var text = document.lastModified;
       document.getElementById("lastModified").innerHTML = text;
   </script>
 </body>
 </html>
+
