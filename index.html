@@ -1,14 +1,37 @@
+<!---- © Koshik Kumar --->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Random Quote Generator</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <h1>Fetch quotes using api.quotable.io.</h1>
-  <p><a href="https://koshikkumar17.github.io/quotes/random"><b>1. Random Quotes (Random Category)</b></a></p>
-  <p></p><a href="https://koshikkumar17.github.io/quotes/tags"><b>2. Random Quotes (Specific Category)</b></a></p>
-</body>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Quotes Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="A page which fetches quotes using an API."/>
+    <link rel="canonical" href="https://KoshikKumar17.github.io/quotes"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container">
+      <font style="font-size:20px;" color="black"><a href="https://KoshikKumar17.github.io"><b><u>Koshik Kumar</u></b></a></font><br/><br/><br/>
+      <h3><b> • Quotes Generator  </b></h3><p>This is a tool by which fetches quotes using <a href="https://api.quotable.io">api.quotable.io</a> API.</p>
+        <a href="https://KoshikKumar17.github.io/quotes/random"><button class="inline-flex items-center justify-center h-10 gap-2 px-5 text-sm font-medium tracking-wide text-white transition duration-300 rounded shadow-md focus-visible:outline-none whitespace-nowrap bg-emerald-500 shadow-emerald-200 hover:bg-emerald-600 hover:shadow-sm hover:shadow-emerald-200 focus:bg-emerald-700 focus:shadow-sm focus:shadow-emerald-200 disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none border border-black">
+            Random Quote (Any Category)
+        </button></a>
+      <a href="https://KoshikKumar17.github.io/quotes/tags"><button class="inline-flex items-center justify-center h-10 gap-2 px-5 text-sm font-medium tracking-wide text-white transition duration-300 rounded shadow-md focus-visible:outline-none whitespace-nowrap bg-emerald-500 shadow-emerald-200 hover:bg-emerald-600 hover:shadow-sm hover:shadow-emerald-200 focus:bg-emerald-700 focus:shadow-sm focus:shadow-emerald-200 disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none border border-black">
+            Random Quote (Specific Category)
+        </button></a>
+      <footer style="background:black;" align="center">
+      <font color="white"> <b>© 2024</b> | <a href="https://telegram.me/KoshikKumar"><b><i><u>Koshik Kumar</u></i></b></a> <br/></font>
+      <font style="font-size:9px;" color="white"><i><b>Last Modified: <span id="lastModified"></span> IST </b></i>
+      </footer>
+    </div>
+    <!---- Last Modified object ---->
+    <script>
+      //---->
+      var text = document.lastModified;
+      document.getElementById("lastModified").innerHTML = text;
+      //---->
+    </script>
+  </body>
 </html>
