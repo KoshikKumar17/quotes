@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato:ital@1&family=Poppins&family=Sometype+Mono&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: auto !important;
+    margin: 0 auto;
+    padding: 10px;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 0 5px #dcdcdc;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.container h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.container button {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.container p {
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    color: rgb(104, 100, 100);
+}
