@@ -16,8 +16,8 @@ function getRandomQuote() {
       // Animate new quote
       new Typed('#quote-text', {
         strings: [data.content],
-        typeSpeed: 1000,
-        showCursor: true,
+        typeSpeed: 700,
+        showCursor: false,
       });
 
       document.getElementById('quote-author').textContent = '- ' + data.author;
